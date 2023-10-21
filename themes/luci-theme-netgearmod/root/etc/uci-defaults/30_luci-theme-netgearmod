@@ -1,0 +1,8 @@
+#!/bin/sh
+uci batch <<-EOF
+	set luci.themes.NetgearMod=/luci-static/netgearmod
+	set luci.main.mediaurlbase=/luci-static/netgearmod
+	commit luci
+EOF
+exit 0 
+# ↑↑↑ DO NOT EDIT THIS LINE
